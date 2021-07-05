@@ -1,2 +1,19 @@
 # Google App Engine generated folder
 appengine-generated/
+{% load static %}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon"&gt;
+&lt;link rel = "stylesheet" href = "{% static 'css/quiz.css' %}"&gt;
+&lt;title&gt;Home&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;a style = "display: block;text-align: right; color: darkblue; margin-right: 20%" href = "/admin"&gt; Go to Admin &lt;/a&gt;
+&lt;div id = "container"&gt;
+&lt;a class = "button" href = "/login"&gt; Go to Quiz &lt;/a&gt;
+&lt;img src = "{% static 'img/frontlineimage.png' %}" style = "width: 98%;border: 8px solid #A3B00D;"&gt;
+&lt;h2 style = "text-align: right; margin-right: 100px;"&gt;&lt;u&gt;Designed and Developed by &lt;/u&gt;&lt;h1 style = "text-align: right;margin-right: 130px;color: white;"&gt;&lt;a href = "https://itsourcecode.com/"&gt;ITSOURCECODE.COM&lt;/a&gt;&lt;/h1&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
