@@ -42,48 +42,6 @@
 
 &lt;/body&gt;
 &lt;/html&gt;
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
 {% load static %}
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -126,3 +84,51 @@
  
 &lt;/body&gt;
 &lt;/html&gt;
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+{% load static %}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}"&gt;
+&lt;script src = "{% static 'js/quiz.js' %}"&gt;&lt;/script&gt;
+&lt;/head&gt;
+ 
+&lt;div class="container"&gt;
+&lt;div class="login"&gt;
+&lt;h1&gt;Login&lt;/h1&gt;
+&lt;form method="post" action="/questions/" onsubmit="getName()"&gt;
+{% csrf_token %}
+&lt;p&gt;&lt;input type="text" id="login" value="" placeholder="Username or Email" required&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type="password" name="pass" value="" placeholder="Password" required&gt;&lt;/p&gt;
+&lt;p class="remember_me"&gt;
+&lt;input type="checkbox" name="rem_me" id="remember_me" checked&gt;
+&lt;label for="remember_me"&gt;&lt;span class="box"&gt;&lt;/span&gt;Remember me this password&lt;/label&gt;
+&lt;/p&gt;
+&lt;p class="submit"&gt;&lt;input type="submit" name="submit" value="Login"&gt;&lt;/p&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/html&gt
